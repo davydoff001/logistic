@@ -5,8 +5,8 @@
  */
 package Davcode.logistic.controller;
 
-import Davcode.logistic.domain.Car;
-import Davcode.logistic.repo.CarRepo;
+import Davcode.logistic.domain.Model;
+import Davcode.logistic.repo.ModelRepo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
  * @author a.davydov
  */
 @RestController
-@RequestMapping("/api/car")
-public class CarController extends AbstractRestController<Car, CarRepo>{
+@RequestMapping("/api/model")
+public class ModelController extends AbstractRestController<Model, ModelRepo>{
 
-    public CarController(CarRepo repo) {
+    public ModelController(ModelRepo repo) {
         super(repo);
     }
     

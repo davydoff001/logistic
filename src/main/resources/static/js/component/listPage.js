@@ -25,15 +25,15 @@ define(function () {
                     autoheaight: true,
                     autowidth: true,
                     editable: true,
-                    pager: "markPager",
+                    pager: 'markPager',
                     datafetch: 3
                 },
                 {
-                    view: "pager",
-                    id: "markPager",
+                    view: 'pager',
+                    id: 'markPager',
                     size: 3,
                     group: 3,
-                    template: "{common.first()}{common.prev()}{common.pages()}{common.next()}{common.last()}"
+                    template: '{common.first()}{common.prev()}{common.pages()}{common.next()}{common.last()}'
                 }
             ]
 

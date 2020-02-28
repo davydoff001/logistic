@@ -31,7 +31,7 @@ import lombok.Data;
 public class Model implements ComboListItem {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long Id;
+    private Long id;
     private String name;
     
     @ManyToOne

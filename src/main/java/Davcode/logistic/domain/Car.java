@@ -6,6 +6,7 @@
 package Davcode.logistic.domain;
 
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -26,6 +27,7 @@ public class Car implements ComboListItem {
     private String name;
     
     @ManyToOne
-    @JsonIdentityReference(alwaysAsId = true)
+    @JsonIdentityReference
+    @JsonSerialize(as=ComboListItem.class)
     private Model model;
 }
